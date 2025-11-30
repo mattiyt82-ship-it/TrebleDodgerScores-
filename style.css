@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Top Menu */
+#top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 20px #00bfff;
+}
+
+/* Buttons */
+.button {
+  background-color: #00bfff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  transition: 0.2s all ease-in-out;
+}
+.button:hover {
+  box-shadow: 0 0 20px #00bfff, 0 0 40px #00bfff;
+  transform: scale(1.05);
+}
+
+/* Player Setup */
+#player-setup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+}
+
+/* Dartboard Container */
+#dartboard-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+#video {
+  max-width: 90%;
+  border: 3px solid #00bfff;
+  border-radius: 10px;
+}
+#overlay {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Scoreboard */
+#scoreboard {
+  text-align: center;
+  margin: 10px 0;
+}
+#players-scores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Stats Panel */
+#stats-panel {
+  text-align: center;
+  margin: 10px 0;
+}
+#stats-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}

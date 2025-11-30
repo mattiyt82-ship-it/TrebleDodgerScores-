@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Futuristic Dart Scorer</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<!-- Top Menu -->
+<div id="top-menu">
+  <select id="game-type" class="button">
+    <option value="x01">X01</option>
+    <option value="cricket">Cricket</option>
+  </select>
+  <button class="button" onclick="openSettings()">Settings</button>
+  <button class="button" onclick="openStats()">Statistics</button>
+</div>
+
+<!-- Player Setup -->
+<div id="player-setup">
+  <div id="players-container"></div>
+  <button class="button" onclick="addPlayer()">Add Player</button>
+  <button class="button" onclick="startGame()">Start Game</button>
+</div>
+
+<!-- Dartboard Video Feed -->
+<div id="dartboard-container">
+  <video id="video" autoplay playsinline></video>
+  <canvas id="overlay"></canvas>
+</div>
+
+<!-- Scoreboard -->
+<div id="scoreboard">
+  <h2>Scores</h2>
+  <div id="players-scores"></div>
+</div>
+
+<!-- Stats Panel -->
+<div id="stats-panel">
+  <h2>Statistics</h2>
+  <div id="stats-cards"></div>
+</div>
+
+<!-- Controls -->
+<div id="controls">
+  <button class="button" onclick="captureBaseline()">Set Baseline</button>
+  <button class="button" onclick="calibrateBoard()">Calibrate Board</button>
+  <button class="button" onclick="undoLastDart()">Undo</button>
+  <button class="button" onclick="resetGame()">Reset Game</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
